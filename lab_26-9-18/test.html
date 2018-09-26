@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui.structure.css">
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<script type="text/javascript" src="demo.js"></script>
+
+	<style type="text/css">
+		td
+		{
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+
+
+<form action="#">
+		
+			<table border="1" style="border-collapse: collapse; width: 30%;" align="center">
+			  <tr>
+				<td colspan="3" align="center"><h2>Person Profile</h2></td>
+			  </tr>
+			  <tr>
+				<td>Fullname  </td><td><input type="text" name="fullname" id="fName" required></td>
+				<td><div id="fnAlert"></div></td>			  
+			  </tr>
+			  <tr>
+				<td>Email  </td><td><input type="text" name="txtemail" required></td>
+				<td></td>
+			  </tr>
+			  <tr>
+				  <td>Gender  </td>
+				  <td>
+					  <input type="radio" name="gender" value="male" checked> Male
+					  <input type="radio" name="gender" value="female"> Female
+					  <input type="radio" name="gender" value="other"> Other
+				  </td>
+				  <td></td>
+			  </tr>
+			  <tr>
+				<td>Date of Birth :</td><td><input type="text" id="date"></td>
+				<td></td>
+			  </tr>
+			  <tr>
+			  	<td>Blood Group  </td>
+			  	<td >
+			  		<div class="ui-widget">
+					  <input id="tags" required>
+					</div>
+			  	</td>
+			  	<td></td>
+			  </tr>
+			  <tr>
+				  <td>Degree  </td>
+				  <td>
+					  <input type="checkbox" name="degree" value="male" checked> SSC
+					  <input type="checkbox" name="degree" value="female"> HSC
+					  <input type="checkbox" name="degree" value="other"> BSc.
+					  <input type="checkbox" name="degree" value="other"> MSc.
+				  </td>
+				  <td></td>
+			  </tr>
+			  <tr>
+				<td>Photo  </td><td colspan="2"><input type="file" id="file"></td>
+			  </tr>
+			  <tr>
+			  	<td align="right" colspan="3">
+				  <input type="reset" value="Cancel">
+				  <input type="submit" value="Submit">
+				</td>
+			  </tr>					
+		  </table>
+		  
+		</form> 
+
+</body>
+</html>
