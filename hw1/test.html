@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui.structure.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui.theme.css">
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<script type="text/javascript" src="demo.js"></script>
+	<script>
+  $( function() {
+    $( "input" ).checkboxradio();
+    $( "fieldset" ).controlgroup();
+  } );
+  </script>
+
+	<style type="text/css">
+		td
+		{
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+
+	
+</head>
+<body>
+
+
+
+	<form >
+		
+		<table border="1" style="border-collapse: collapse; width: 50%;" align="center">
+			<tr>
+				<td colspan="3" align="center"><h2>Person Profile</h2></td>
+			</tr>
+			<tr>
+				<td>Fullname  </td><td><input type="text" name="fullname" id="fName" ></td>
+				<td><div id="fnAlert"></div></td>			  
+			</tr>
+			<tr>
+				<td>Email  </td><td><input type="text" name="txtemail" id="email"></td>
+				<td><div id="emAlert"></div></td>
+			</tr>
+			<tr>
+				<td>Gender  </td>
+				<td>
+					<label for="gender-1">Male</label>
+				    <input type="radio" name="gender" id="gender-1" value="Male" checked>
+				    <label for="gender-2">Female</label>
+				    <input type="radio" name="gender" id="gender-2" value="Female">
+				    <label for="gender-3">Other</label>
+				    <input type="radio" name="gender" id="gender-3" value="Other">
+				</td>
+				<td><div id="gnAlert"></div></td>
+			</tr>
+			<tr>
+				<td>Date of Birth :</td><td><input type="text" name="birth" id="date"></td>
+				<td><div id="brAlert"></div></td>
+			</tr>
+			<tr>
+			  	<td>Blood Group  </td>
+			  	<td >
+			  		<div class="ui-widget">
+					  <input id="tags" name="group">
+					</div>
+			  	</td>
+			  	<td><div id="blAlert"></div></td>
+			</tr>
+			<tr>
+				<td>Degree  </td>
+				<td>
+					<label for="degree-1">SSC</label>
+					<input type="checkbox" name="degree" id="degree-1" value="SSC">
+					<label for="degree-2">HSC</label>
+					<input type="checkbox" name="degree" id="degree-2" value="HSC">
+					<label for="degree-3">BSc.</label>
+					<input type="checkbox" name="degree" id="degree-3" value="BSc.">
+					<label for="degree-4">MSc.</label>
+					<input type="checkbox" name="degree" id="degree-4" value="MSc.">
+				<td><div id="dgAlert"></div></td>
+			</tr>
+			<tr>
+				<td>Photo  </td><td colspan="2"><input type="file" id="file"></td>
+			</tr>
+			<tr>
+			  	<td align="right" colspan="3">
+				  <input type="reset" value="Cancel" class="ui-button ui-widget ui-corner-all">
+				  <input type="submit" value="Submit" class="ui-button ui-widget ui-corner-all">
+				</td>
+			</tr>					
+		</table>
+		  
+	</form> 
+
+	<div id="output"></div>
+
+</body>
+</html>
